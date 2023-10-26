@@ -75,7 +75,7 @@
 
 .good--two {
   @media (max-width: $mobile-width-only) {
-    margin-top: 110px;
+    margin-top: 138px;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: none;
   }
@@ -90,19 +90,24 @@
     padding-bottom: 3px;
   }
   .good__img-container img {
-    margin-top: 35px;
+    margin-top: 60px;
   }
 }
 
 .good--three {
   @media (max-width: $mobile-width-only) {
     grid-gap: 0;
-  }
-  .good__text-title {
-    margin-bottom: 12px;
-  }
-  p {
-    padding-top: 3px;
-    padding-bottom: 3px;
+    .good__text-title {
+      margin-bottom: 12px;
+      padding-top: 28px;
+    }
+    p {
+      padding-top: 3px;
+      padding-bottom: 3px;
+    }
+
+    .good__img-container img {
+      margin-top: 50px;
+    }
   }
 }
