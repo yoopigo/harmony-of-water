@@ -1,0 +1,19 @@
+.banner {
+  padding-top: 50px;
+  max-width: 1420px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+.banner:hover {
+  transform: scale(1.02);
+  transition: transform 0.4s ease;
+}
+.banner:not(hover) {
+  transform: scale(1);
+  transition: transform 0.4s ease;
+}
+.banner img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 550px;
+}/*# sourceMappingURL=banner.css.map */
