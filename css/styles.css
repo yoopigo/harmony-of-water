@@ -265,7 +265,7 @@ p {
 
 .slider__wrapper {
   max-width: 1235px;
-  margin-left: 4%; }
+  overflow: hidden; }
 
 .slider__elements {
   display: flex;
@@ -277,8 +277,8 @@ p {
 
 .slider__element {
   display: flex;
-  width: 23%;
-  flex: 0 0 23%;
+  width: 25%;
+  flex: 0 0 23.5%;
   justify-content: center;
   align-items: center;
   flex-direction: column; }
@@ -297,7 +297,8 @@ p {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  position: relative; }
+  position: relative;
+  z-index: 3; }
 
 .slider__arrow-left {
   background: url("../img/slider/left.svg");
