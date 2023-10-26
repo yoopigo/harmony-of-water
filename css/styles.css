@@ -320,7 +320,8 @@ p {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  gap: 18px; }
+  gap: 18px;
+  cursor: pointer; }
 
 .slider__arrow-left {
   background: url("../img/slider/left.svg"); }
