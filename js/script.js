@@ -11,7 +11,7 @@ function checkViewport() {
       }
     }
   } else {
-    for (let i = 0; i < sliderElements.length; i++) {
+    for (let i = 4; i < sliderElements.length; i++) {
       sliderElements[i].style.display = 'block';
     }
   }
@@ -22,8 +22,14 @@ function checkViewport() {
         sliderElements[i].style.display = 'none';
       }
       sliderLine.style.justifyContent = 'center';
+
+      const elementToAdjust = sliderElements[0];
+      elementToAdjust.style.flex = '0 0 100%';
     } else {
-      sliderLine.style.justifyContent = 'flex-start';
+      for (let i = 3; i < sliderElements.length; i++) {
+        sliderElements[i].style.display = 'none';
+        sliderLine.style.justifyContent = 'center';
+      }
     }
   }
 }
