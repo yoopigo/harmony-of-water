@@ -296,7 +296,8 @@ p {
   padding: 0 20px; }
   @media (max-width: 375px) {
     .slider__title {
-      left: 20%; } }
+      left: 20%;
+      top: -122px; } }
 
 .slider__wrapper {
   max-width: 1235px;
@@ -345,3 +346,8 @@ p {
 .slider__arrow-right {
   background: url("../img/slider/right.svg");
   right: 12px; }
+
+.page__footer {
+  height: 200px;
+  background-color: black;
+  margin-top: 200px; }
