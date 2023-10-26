@@ -7,6 +7,16 @@
   align-items: center;
 }
 
+.slider__title {
+  @include title;
+  position: absolute;
+  top: -75px;
+  padding: 0 20px;
+  @media (max-width: $mobile-width-only) {
+    left: 20%;
+  }
+}
+
 .slider__wrapper {
   max-width: 1235px;
   overflow: hidden;
@@ -24,10 +34,13 @@
 .slider__element {
   display: flex;
   width: 25%;
+  gap: 18px;
   flex: 0 0 23.5%;
+  padding: 0 20px;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 18px;
 }
 .slider__arrow-left {
   background: url('../img/slider/left.svg');
