@@ -1,0 +1,14 @@
+.goods .good:first-of-type {
+  margin-top: 12px;
+  @media (max-width: $mobile-width-only) {
+    margin-top: -26px;
+  }
+}
+
+.goods {
+  @media (max-width: $mobile-width-only) {
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+  }
+}

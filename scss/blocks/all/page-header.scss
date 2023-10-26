@@ -1,0 +1,9 @@
+.page__header-title {
+  @include title;
+  margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

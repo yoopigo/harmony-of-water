@@ -1,0 +1,28 @@
+$desktop-width: 1920px;
+$mobile-width-only: 375px;
+$tablet-width: 1024px;
+$Baskerville: Baskerville Display PT, sans-serif;
+$Proxima: Proxima Nova, sans-serif;
+
+@mixin title() {
+  color: #000;
+  display: flex;
+  justify-content: center;
+  font-family: Baskerville Display PT;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+@mixin text() {
+  color: #000;
+  font-family: Proxima Nova;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0.8px;
+}

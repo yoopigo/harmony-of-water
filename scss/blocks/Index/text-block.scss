@@ -1,0 +1,49 @@
+.text-block {
+  padding-top: 47px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+
+  @media (max-width: $tablet-width) {
+    padding-top: 47px;
+  }
+
+  .text-block__title {
+    @include title;
+    margin: 0 0 13px 0;
+    text-align: center;
+  }
+  .text-block__text {
+    @include text;
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+  a {
+    @include text;
+    line-height: normal;
+    cursor: pointer;
+    border-bottom: 1px solid #000;
+    padding-bottom: 4px;
+    text-align: center;
+
+    &:hover {
+      color: #00ccff;
+    }
+  }
+}
+.text-block--two {
+  padding-top: 100px;
+
+  p {
+    text-transform: uppercase;
+  }
+
+  .text-block__title {
+    @media (max-width: $mobile-width-only) {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}

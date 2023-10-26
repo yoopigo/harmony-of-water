@@ -1,0 +1,9 @@
+.page__wrapper {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  height: 100vh;
+  max-width: $desktop-width;
+  margin: 0 auto;
+  justify-content: center;
+  padding-top: 60px;
+}
