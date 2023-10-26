@@ -2,6 +2,7 @@ function checkViewport() {
   let viewportWidth = window.innerWidth;
   let sliderElements = document.querySelectorAll('.slider__element');
   let sliderLine = document.querySelector('.slider__elements');
+  let elementToAdjust = sliderElements[0];
 
   if (viewportWidth <= 850) {
     if (sliderElements.length > 3) {
@@ -23,7 +24,6 @@ function checkViewport() {
       }
       sliderLine.style.justifyContent = 'center';
 
-      const elementToAdjust = sliderElements[0];
       elementToAdjust.style.flex = '0 0 100%';
     } else {
       for (let i = 3; i < sliderElements.length; i++) {
