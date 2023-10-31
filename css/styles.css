@@ -338,13 +338,17 @@ p {
   align-items: center;
   flex-direction: column;
   gap: 18px;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: opacity 0.5s ease-in-out; }
 
 .slider__arrow-left {
   background: url("../img/slider/left.svg"); }
 
 .slider__arrow-right {
   background: url("../img/slider/right.svg"); }
+
+.slider__element.hidden {
+  opacity: 0; }
 
 .slider__arrow {
   width: 35px;

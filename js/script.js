@@ -32,7 +32,7 @@ window.addEventListener('resize', function () {
 });
 
 function showNextSlide() {
-  sliderElements[currentVisibleIndex].style.display = 'none';
+  sliderElements[currentVisibleIndex].style.display = 'hidden';
 
   currentVisibleIndex = (currentVisibleIndex + 1) % sliderElements.length;
 
