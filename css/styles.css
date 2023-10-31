@@ -163,7 +163,7 @@ p {
   gap: 55px; }
   @media (max-width: 1024px) {
     .good {
-      grid-template-rows: 1fr 1fr;
+      grid-template-rows: 1fr auto;
       grid-template-columns: none;
       height: 100%; } }
   @media (max-width: 375px) {

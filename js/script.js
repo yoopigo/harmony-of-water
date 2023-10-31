@@ -1,5 +1,5 @@
 let currentVisibleIndex = 0;
-let maxVisibleSlides = window.innerWidth <= 375 ? 1 : 4;
+let maxVisibleSlides = window.innerWidth <= 1024 ? 1 : 4;
 let sliderElements = document.querySelectorAll('.slider__element');
 let sliderLine = document.querySelector('.slider__elements');
 
@@ -27,7 +27,7 @@ function checkViewport() {
 }
 checkViewport();
 window.addEventListener('resize', function () {
-  maxVisibleSlides = window.innerWidth <= 375 ? 1 : 4;
+  maxVisibleSlides = window.innerWidth <= 1024 ? 1 : 4;
   checkViewport();
 });
 
@@ -36,7 +36,7 @@ function showNextSlide() {
 
   currentVisibleIndex = (currentVisibleIndex + 1) % sliderElements.length;
 
-  if (window.innerWidth <= 375) {
+  if (window.innerWidth <= 1024) {
     sliderElements[currentVisibleIndex].style.flex = '0 0 100%';
     sliderElements[currentVisibleIndex].style.justifyContent = 'center';
   }
