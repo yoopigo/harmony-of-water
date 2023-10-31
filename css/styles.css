@@ -256,7 +256,7 @@ p {
   padding-left: 190px; }
   @media (max-width: 1024px) {
     .good--two .good__text-container {
-      padding-left: 0px 5px; } }
+      padding: 0px 5px; } }
   @media (max-width: 375px) {
     .good--two .good__text-container {
       padding: 0 20px; } }
