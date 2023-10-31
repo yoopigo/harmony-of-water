@@ -19,10 +19,10 @@ function checkViewport() {
 
   if (maxVisibleSlides === 1) {
     sliderElements[0].style.justifyContent = 'center';
-    sliderElements[0].style.flex = '0 0 100%'; // Set the flex property to '0 0 100%'
+    sliderElements[0].style.flex = '0 0 100%';
   } else {
     sliderLine.style.justifyContent = 'space-between';
-    sliderLine.style.flex = ''; // Reset the flex property
+    sliderLine.style.flex = '';
   }
 }
 checkViewport();
@@ -32,23 +32,17 @@ window.addEventListener('resize', function () {
 });
 
 function showNextSlide() {
-  // Скрываем текущий видимый элемент
   sliderElements[currentVisibleIndex].style.display = 'none';
 
-  // Вычисляем индекс следующего элемента
   currentVisibleIndex = (currentVisibleIndex + 1) % sliderElements.length;
 
-  // Проверяем разрешение экрана
   if (window.innerWidth <= 375) {
-    // Устанавливаем свойство flex для нового текущего элемента
     sliderElements[currentVisibleIndex].style.flex = '0 0 100%';
     sliderElements[currentVisibleIndex].style.justifyContent = 'center';
   }
 
-  // Отображаем новый текущий элемент
   sliderElements[currentVisibleIndex].style.display = 'flex';
 
-  // Пересчитываем отображение остальных элементов
   checkViewport();
 }
 

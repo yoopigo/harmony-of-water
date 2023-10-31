@@ -6,10 +6,13 @@
   margin-top: 50px;
   gap: 55px;
 
-  @media (max-width: $mobile-width-only) {
+  @media (max-width: $tablet-width) {
     grid-template-rows: 1fr 1fr;
     grid-template-columns: none;
     height: 100%;
+  }
+
+  @media (max-width: $mobile-width-only) {
     gap: 27px;
     margin-top: 0;
   }
@@ -17,6 +20,7 @@
   .good__img-container {
     max-width: 710px;
     max-height: 550px;
+
     @media (max-width: $mobile-width-only) {
       max-width: 375px;
       max-height: 290px;
@@ -36,6 +40,9 @@
 
   .good__img-container {
     justify-self: end;
+    @media (max-width: $tablet-width) {
+      justify-self: center;
+    }
     img {
       height: 100%;
       @media (max-width: $mobile-width-only) {
@@ -56,6 +63,10 @@
 
 .good--right-img {
   grid-template-columns: 48% 52%;
+
+  @media (max-width: $tablet-width) {
+    grid-template-columns: none;
+  }
 
   .good__img-container {
     justify-self: end;
@@ -92,6 +103,10 @@
   }
   .good__text-container {
     padding-left: 190px;
+
+    @media (max-width: $tablet-width) {
+      padding-left: 55px;
+    }
     @media (max-width: $mobile-width-only) {
       padding: 0 20px;
     }
@@ -99,6 +114,10 @@
 
   .good__img-container {
     justify-self: start;
+
+    @media (max-width: $tablet-width) {
+      justify-self: center;
+    }
   }
 }
 
